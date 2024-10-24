@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "July 2024 - Now",
+    title: "Freelancer",
+    company: "",
+    description:
+      "Developing tailored web solutions for clients, focusing on responsive web design, animated webs, and e-commerce platforms. Specialized in delivering high-quality, user-friendly websites that meet business needs.",
+  },
+  {
+    date: "March 2022 - January 2023",
+    title: "Sales Manager",
+    company: "Dentalis",
+    description:
+      "Managed sales operations for a dental care product line specializing in dentifrice pills. Developed strategic sales initiatives, expanded the client base, and increased market penetration through personalized customer engagement and marketing campaigns.",
+    link: "https://aprenderaemprender.org.ar/dentalis/",
+  },
+];
+---
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

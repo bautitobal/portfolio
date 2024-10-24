@@ -1,0 +1,30 @@
+---
+import EducationItem from "./EducationItem.astro";
+
+const EDUCATION = [
+  {
+    date: "2024 - Now",
+    title: "Computer Engineering",
+    place: "National University of La Matanza",
+    description:
+      "Currently pursuing a degree in Computer Engineering, focusing on software development, algorithms, and systems architecture",
+  },
+  {
+    date: "2017 - 2022",
+    title: "Economics Bachelor's Degree - Highschool",
+    place: "Colegio Parroquial Juan XXIII",
+    description:
+      "Graduated with a focus on economics and social sciences, building a strong foundation in analytical thinking and problem-solving.",
+    link: "https://www.linkedin.com/in/bautistatobal/",
+  },
+];
+---
+<ol class="relative mt-16">
+  {
+    EDUCATION.map((education) => (
+      <li class="">
+        <EducationItem {...education} />
+      </li>
+    ))
+  }
+</ol>
